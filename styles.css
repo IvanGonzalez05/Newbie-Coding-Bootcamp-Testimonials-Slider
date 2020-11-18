@@ -44,11 +44,17 @@ body{
     width: 70%;
     height: 70%;
     padding-top: 9%;
+    box-shadow: 0 4px 2px -2px gray;
 }
 
-.buttons{
+
+.buttons-container{
     width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: -15px;
 }
+
 .before{
     border-top-left-radius: 50%;
     border-bottom-left-radius: 50%;
@@ -63,9 +69,18 @@ body{
     margin: 0;
 }
 
-/* .info-container{
-    height: 40vh;
-}  */
+.before, .next{
+    background-color: whitesmoke;
+    color: black;
+    border: none;
+    width: 12%;
+}
+
+.info-container{
+/*  height: 40vh; */
+    margin-top: 5%;
+
+} 
 
 .main-info-container{
     width: 72%;
@@ -74,6 +89,7 @@ body{
     background-position: top;
     background-repeat: no-repeat;
     background-size: 22%;
+
 }
 
 .main-info, .name, .job-tile{
