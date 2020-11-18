@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;700&display=swap');
+
+/********************** I create these flex clases becouse I usually use them *******************************/
+.flex-col-center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.flex-row-center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+/**************************************************************************************************************/
+/****************************** These styles are for mobile ***************************/
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url(images/pattern-curve.svg);
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    background-size: contain;
+}
+
+.profile-picture-container{
+    width: 93%;
+
+    background-image: url(images/pattern-bg.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-picture{
+    width: 70%;
+    height: 70%;
+    padding-top: 9%;
+}
+
+.buttons{
+    width: 100%;
+}
+.before{
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    padding: 3%;
+    margin: 0;
+}
+
+.next{
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    padding: 3%;
+    margin: 0;
+}
+
+/* .info-container{
+    height: 40vh;
+}  */
+
+.main-info-container{
+    width: 72%;
+    height: 100%;
+    background-image: url(images/pattern-quotes.svg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 22%;
+}
+
+.main-info, .name, .job-tile{
+    font-family: 'Inter', sans-serif;
+}
+
+.name, .job-title{
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+.main-info{
+    text-align: center;
+}
+
+.job-title{
+    color: gray;
+}
