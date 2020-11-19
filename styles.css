@@ -16,6 +16,9 @@
 }
 /**************************************************************************************************************/
 /****************************** These styles are for mobile ***************************/
+html{
+    height: 100%;
+}
 
 body{
     margin: 0;
@@ -25,6 +28,7 @@ body{
     background-repeat: no-repeat;
     background-position: bottom left;
     background-size: contain;
+    min-height: 100%;
 }
 
 .profile-picture-container{
