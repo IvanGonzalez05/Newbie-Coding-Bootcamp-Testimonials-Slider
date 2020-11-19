@@ -29,6 +29,10 @@ body{
     background-position: bottom left;
     background-size: contain;
     min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .profile-picture-container{
@@ -96,6 +100,13 @@ body{
 
 }
 
+.person-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 .main-info, .name, .job-tile{
     font-family: 'Inter', sans-serif;
 }
@@ -112,4 +123,56 @@ body{
 
 .job-title{
     color: gray;
+}
+
+/************************** MEDIA QUERIES STYLES FOR 1440PX *******************************************/
+@media only screen and (min-width: 768px){
+    body{
+        flex-direction: row-reverse;
+        background-size: 50%;
+    }
+    .profile-picture-container{
+        width: 45%;
+    }
+
+    .profile-picture-container{
+        margin: -12%;
+    }
+
+    .before, .next{
+        width: 7%;
+        padding: 15px;
+    }
+
+    .buttons-container{
+        margin-left: -37%;
+    }
+
+    .info-container{
+        width: 45%;
+    } 
+
+    .main-info-container{
+        width: 90%;
+        background-size: 18%;
+        background-position: 20% 0%;
+    }
+
+    .main-info{
+        text-align: left;
+        font-size: 2rem;
+    }
+
+    .name, .job-title{
+        font-size: 1rem
+    }
+
+    .person-info{
+        flex-direction: row;
+    }
+
+    .name, .job-title{
+        margin: 6px;
+        font-size: 1.3rem;
+    }
 }

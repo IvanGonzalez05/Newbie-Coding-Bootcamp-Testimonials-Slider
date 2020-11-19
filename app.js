@@ -26,5 +26,6 @@ function nextImage(){
 
 function setImage(){
     path = 'images/' + newSource[indexNewSource];
-    return image.src =  path.toString();
+    //console.log(path)
+    return image.src =  path;
 }
