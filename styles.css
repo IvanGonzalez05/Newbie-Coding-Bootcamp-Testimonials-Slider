@@ -82,10 +82,10 @@ body{
     color: black;
     border: none;
     width: 12%;
+    outline: none;
 }
 
 .info-container{
-/*  height: 40vh; */
     margin-top: 5%;
 
 } 
